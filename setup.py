@@ -58,7 +58,7 @@ def main():
         long_description = stream.read()
 
     setup(long_description=long_description,
-          packages=find_packages(include=["prismriver"]),
+          packages=find_packages(include=["prismriver*"]),
           extras_require=extras_require,
           python_requires='>=3.3',  # I'll trust the README
           **kwargs)
